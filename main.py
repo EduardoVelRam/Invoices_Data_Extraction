@@ -17,7 +17,7 @@ def extract_invoice_info(pdf_file_path):
             page = pdf_reader.pages[page_num]
             text += page.extract_text()
 
-        #print("Texto: ",text)
+        #print("Text: ",text)
 
         # Regular expressions
         invoice_number_pattern = r'Invoice Number:\s*#\s*(\d+)'
